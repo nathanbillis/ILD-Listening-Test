@@ -1,0 +1,78 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1644230163" file="/Users/nathan/Documents/MATLAB/ILD Scripts/ILD Listening Test.prj" location="/Users/nathan/Documents/MATLAB/ILD Scripts" name="ILD Listening Test" target="target.mlapps" target-name="Package App">
+    <param.appname>ILD Listening Test</param.appname>
+    <param.authnamewatermark>Nathan Billis</param.authnamewatermark>
+    <param.email>ncab500@york.ac.uk</param.email>
+    <param.company>University of York</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>ILD Listening Test Main Application</param.summary>
+    <param.description>ILD Listening Test main Application, this calls the sub apps to run the full listening test. Final applicaition will be released as a .exe and .dmg for windows and mac respectivley.
+
+=== CHANGE LOG ===
+v1.0 - Initial Release
+v1.1-1.3 - Packaging tweaks to work with various platforms
+v1.4 - Changes buttons to be non interruptible to remove false button pushes</param.description>
+    <param.screenshot />
+    <param.version>1.4</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>/Volumes/GoogleDrive/Shared drives/ILD Personalisation - MEng Project/ILD Listening Test</param.output>
+    <param.guid>35be8fc7-a378-40a2-b981-fc80f4046029</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.screenshot />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/main_app.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/calibration_app.mlapp</file>
+      <file>${PROJECT_ROOT}/experiment_app.mlapp</file>
+      <file>${PROJECT_ROOT}/experiment_settings_app.mlapp</file>
+      <file>${PROJECT_ROOT}/info_sheet_app.mlapp</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>/Users/nathan/Documents/MATLAB/API_MO</file>
+      <file>${PROJECT_ROOT}/audio</file>
+      <file>${PROJECT_ROOT}/csv</file>
+      <file>${PROJECT_ROOT}/img</file>
+      <file>${PROJECT_ROOT}/sofa</file>
+      <file>${PROJECT_ROOT}/sofa/D1_48K_24bit_256tap_FIR_SOFA.sofa</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Volumes/GoogleDrive/Shared drives/ILD Personalisation - MEng Project" name="ILD Listening Test" optional="false">/Volumes/GoogleDrive/Shared drives/ILD Personalisation - MEng Project/ILD Listening Test</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2020b.app</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.16</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

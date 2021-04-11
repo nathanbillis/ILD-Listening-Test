@@ -1,0 +1,141 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3402121562" file="/Users/nathan/Documents/MATLAB/ILD Scripts/ILDListeningTest.prj" location="/Users/nathan/Documents/MATLAB/ILD Scripts" name="ILDListeningTest" preferred-package-location="/Users/nathan/Documents/MATLAB/ILD Scripts/ILDListeningTest/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>ILDListeningTest</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Nathan Billis</param.authnamewatermark>
+    <param.email>ncab500@york.ac.uk</param.email>
+    <param.company>University of York</param.company>
+    <param.summary>ILD Listening Test main Application</param.summary>
+    <param.description>ILD Listening Test main Application.
+
+=== CHANGE LOG ===
+v1.0 - Initial Release
+v1.1-1.3 - Packaging tweaks to work with various platforms
+v1.4 - Changes buttons to be non interruptible to remove false button pushes</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/ILDListeningTest/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes>In the following directions, replace MR/v99 by the directory on the target machine where MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
+
+If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the following string:
+
+MR/v99/runtime/maci64:MR/v99/sys/os/maci64:MR/v99/bin/maci64
+
+If it is defined, set it to the following:
+
+${DYLD_LIBRARY_PATH}:MR/v99/runtime/maci64:MR/v99/sys/os/maci64:MR/v99/bin/maci64</param.target.install.notes>
+    <param.intermediate>${PROJECT_ROOT}/ILDListeningTest/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/ILDListeningTest/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/ILDListeningTest/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/ILDListeningTest</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>ILDListeningTest</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments 
+ Description 
+ 	 ILD Listening Test main Application.
+
+=== CHANGE LOG ===
+v1.0 - Initial Release
+v1.1-1.3 - Packaging tweaks to work with various platforms
+v1.4 - Changes buttons to be non interruptible to remove false button pushes</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/main_app.mlapp</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>/Users/nathan/Documents/MATLAB/API_MO</file>
+      <file>${PROJECT_ROOT}/audio</file>
+      <file>${PROJECT_ROOT}/csv</file>
+      <file>${PROJECT_ROOT}/csv/evaluation-positions.csv</file>
+      <file>${PROJECT_ROOT}/img</file>
+      <file>${PROJECT_ROOT}/sofa</file>
+      <file>${PROJECT_ROOT}/sofa/D1_44K_16bit_256tap_FIR_SOFA.sofa</file>
+      <file>${PROJECT_ROOT}/sofa/D1_48K_24bit_256tap_FIR_SOFA.sofa</file>
+      <file>${PROJECT_ROOT}/sofa/D1_96K_24bit_512tap_FIR_SOFA.sofa</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/calibration_app.mlapp</file>
+      <file>${PROJECT_ROOT}/experiment_app.mlapp</file>
+      <file>${PROJECT_ROOT}/experiment_settings_app.mlapp</file>
+      <file>${PROJECT_ROOT}/info_sheet_app.mlapp</file>
+      <file>/Users/nathan/Documents/MATLAB/shortburst.wav</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/ILDListeningTest/for_testing" name="splash.png" optional="false">/Users/nathan/Documents/MATLAB/ILD Scripts/ILDListeningTest/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/ILDListeningTest/for_testing" name="ILDListeningTest.app" optional="false">/Users/nathan/Documents/MATLAB/ILD Scripts/ILDListeningTest/for_testing/ILDListeningTest.app</file>
+      <file location="${PROJECT_ROOT}/ILDListeningTest/for_testing" name="run_ILDListeningTest.sh" optional="false">/Users/nathan/Documents/MATLAB/ILD Scripts/ILDListeningTest/for_testing/run_ILDListeningTest.sh</file>
+      <file location="${PROJECT_ROOT}/ILDListeningTest/for_testing" name="readme.txt" optional="true">/Users/nathan/Documents/MATLAB/ILD Scripts/ILDListeningTest/for_testing/readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2020b.app</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.16</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
